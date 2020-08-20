@@ -1,0 +1,43 @@
+/*********
+COVER
+**********/
+
+.cover{
+    height: calc(calc(var(--vh, 1vh) * 100) - var(--myheight-navbar));
+    width: auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.cover__filter{ background-color: rgb(61, 3, 3); opacity: 0.1; }
+
+.cover__copy{
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.cover__copy h2{ font-style: italic; }
+
+.cover__button{ position: relative; float: right; font-weight: 600; }
+
+.cover__titolo{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .cover__titolo{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .cover__titolo{
+        font-size: 25px;
+    }
+}

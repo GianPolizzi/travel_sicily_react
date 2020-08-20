@@ -1,0 +1,191 @@
+/* Variabili CSS */
+:root {
+    --mycolor-separatore: #8898aa3a;
+    --myheight-navbar: 35px;
+    --icon-height: 150px;
+    --icon-width: 150px;
+    --mini-icon-height: 100px;
+    --mini-icon-width: 100px;
+}
+
+/* BODY E MOD CONTAINER-FLUID*/
+body {
+    background-color: #f5f6fb;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.border-radius-10{
+    border-radius: 10px;
+}
+.separatore{
+    width: 100%;
+    height: 1px;
+    background-color: var(--mycolor-separatore);
+}
+
+/*Taglia il testo a 4 linee*/
+.taglia-testo {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Per tutti i bottoni di classe btn del progetto a meno di diversa specifica su css dei componenti.*/
+button.btn{
+    border-radius: 20px;
+}
+
+/* COLORI */
+.mycolor-orange {
+    color: rgb(245, 174, 21);
+}
+.mycolor-red {
+    color: rgb(207, 10, 16);
+}
+.mycolor-grey {
+    color: rgb(129, 129, 129);
+}
+.mycolor-grey2 {
+    color:rgb(224, 212, 212);
+}
+
+/* TITOLI E TESTI */
+.medium-title{
+    font-size: 36px;
+    font-family: 'Roboto';
+}
+.title {
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.sub-title {
+    font-size: 20px;
+}
+
+.text-tiny{
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+
+.text-small {
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+.text-medium{
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+.text-large{
+    font-size: 28px;
+    font-family: 'Roboto';
+}
+
+/* ICONE E IMMAGINI */
+.myicon{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+}
+.myicon-padding {
+    height: 130px !important;
+    width: 130px !important;
+    padding: 10px !important;
+}
+.icon-taxi {
+    background-color: #fded98;
+    color: #ee9d08
+}
+.icon-bus {
+    background-color: #b0dbee;
+    color: #31befa
+}
+.icon-car {
+    background-color: #fcd1da;
+    color: #f73761
+}
+
+.operator-img {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    display: block;
+    object-fit: cover;
+}
+.agency-img {
+    width: 150px;
+    height: auto;
+}
+.img-modale {
+    width: 90%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.margin-daycard{
+    margin-top: 17px;
+}
+
+@media screen and (min-width:768px){
+    .noMdLg{
+        display: none;
+    } 
+}
+@media screen and (max-width: 767px) {
+    .medium-title {
+        font-size: 28px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .sub-title {
+        font-size: 14px;
+    }
+    .text-tiny{
+        font-size: 10px;
+    }
+    .text-small{
+        font-size: 12px;
+    }
+    .text-medium{
+        font-size: 14px;
+    }
+    .text-large {
+        font-size: 22px;
+    }
+    .myicon{
+        height: 100px;
+        width: 100px;
+    }
+    .myicon-padding {
+        height: 100px !important;
+        width: 100px !important;
+        padding: 10px !important;
+    }
+    .operator-img {
+        width: 100px;
+        height: 100px;
+    }
+    .nomobile {
+        display: none;
+    }
+    .margin-daycard{
+        margin-top: 5px;
+    }
+    .img-modale {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 5px;
+    }
+}

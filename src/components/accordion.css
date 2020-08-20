@@ -1,0 +1,57 @@
+.accordion {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.titoloAccordion {
+    font-size: 30px;
+    color: #5B5959;
+    font-weight: bold;
+}
+
+.date-text {
+    font-size: 24px;
+    color: rgb(129, 129, 129);
+    font-weight: 300;
+}
+
+.icon-arrow {
+    cursor: pointer;
+}
+
+.body-accordion {
+    background-color: #fff;
+    margin-bottom: 20px;
+    height: 0px;
+    transition: height .25s ease-in;
+}
+
+.open {
+    height: auto;
+}
+.close{
+    height: 0px;
+}
+
+.color-grey{
+    color:rgb(224, 212, 212)!important;
+    font-size: 20px!important;
+}
+
+@media screen and (max-width: 767px){
+    .titoloAccordion {
+        font-size: 20px;
+    }
+    .date-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .titoloAccordion {
+        font-size: 15px;
+    }
+    .date-text {
+        font-size: 13px;
+    }
+}

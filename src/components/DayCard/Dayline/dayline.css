@@ -1,0 +1,75 @@
+.coda-timeline {
+    border-left: 10px dotted grey;
+    box-sizing: border-box;
+    height: 93%;
+    width: 10px;
+}
+
+.day-circle {
+    background-color: rgb(252, 171, 22);
+    border-radius: 50%;
+    width: 70px !important;
+    height: 70px !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-circle {
+    background-color: #b0dbed;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    color: rgb(137, 169, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transport-circle {
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.dayline-icon-text{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .coda-timeline {
+        border-left: 4px dotted grey;
+        height: 96%;
+        width: 4px;
+    }
+    .day-circle {
+        width: 34px !important;
+        height: 34px !important;
+    }
+    .activity-circle {
+        width: 17px !important;
+        height: 17px !important;
+    }
+    .transport-circle {
+        width: 17px !important;
+        height: 17px !important;
+        padding: 3px;
+    }
+    .mobile-padding-day{
+        padding: 0px !important;
+    }
+    .mobile-padding-div-icon{
+        padding-left: 11px !important;
+    }
+    .activity-icon-dayline{
+        padding: 2px;
+    }
+    .dayline-icon-text{
+        font-size: 9px;
+    }
+}

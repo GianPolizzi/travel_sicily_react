@@ -1,0 +1,39 @@
+.containermodale {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(56, 56, 56, 0.438);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    /* la navbar di bootstra ha 1030 quindi dovevamo mettere piu di 1030 */
+}
+
+.modale {
+    position: relative;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    z-index: 1050;
+    padding: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .containermodale {
+        padding-top: 5%;
+    }
+    .modale {
+        width: 85%!important;
+    }
+}
+
+.chiudi {
+    border: 1px solid rgb(233, 220, 220);
+    border-radius: 5px
+}
+
+.chiudi:hover {
+    background-color: rgba(199, 247, 240, 0.945);
+    cursor: pointer;
+}

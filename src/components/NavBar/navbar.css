@@ -1,0 +1,58 @@
+.my-nav {
+    background-color:  rgba(248, 249, 250, 0.8);
+    height: var(--myheight-navbar);
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.nav-link.active{
+    color: rgb(192, 23, 28) !important;
+}
+
+.link-hover:hover{
+    color: rgb(151, 10, 14);
+}
+
+.navlogo{
+    content:url("./logo.png");
+    height: calc(var(--myheight-navbar) - 4px);
+    width: auto;
+}
+
+.font-link {
+    font-size: 1rem;
+    font-family: 'Roboto';
+}
+
+nav .btn{
+    border-radius: 10px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .navlogo{
+        content:url("./minilogo.png");
+    }
+    .font-link {
+        font-size: 0.8rem;
+    }
+    .my-nav {
+        height: var(--myheight-navbar);
+    } 
+}
+@media screen and (max-width: 575px) {
+    .navlogo{
+        content:url("./minilogo.png");
+    }
+    .font-link {
+        font-size: 0.6rem;
+    }
+    .my-nav {
+        height: var(--myheight-navbar);
+    }    
+    nav .btn{
+        padding: 0.2rem !important;
+        font-size: 0.7rem !important;
+    }
+}

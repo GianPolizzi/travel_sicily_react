@@ -1,0 +1,47 @@
+.login-container{
+    margin-top: 10vh;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(207,10,16);
+}
+
+.login-form-1 .btnSubmit:hover{
+    background-color: rgb(151, 10, 14);
+}
+
+.login-container .mycolor-red{
+    height: 24px;
+}
+
+.login-logo{
+    width: 350px;
+    height: auto;
+}
+@media screen and (max-width: 767px) {
+    .login-logo{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .login-logo{
+        width: 180px;
+    }
+}

@@ -1,0 +1,33 @@
+.reference-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.separatore-card {
+    border-right: 1px solid var(--mycolor-separatore);
+    height: var(--icon-height);
+}
+
+.agency-info {
+    height: var(--icon-height);
+}
+
+@media screen and (max-width: 1199px) {
+    .reference-card {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .separatore-card {
+        border-bottom: 1px solid var(--mycolor-separatore);
+        ;
+        border-right: 0;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        height: 1px;
+    }
+    .agency-info {
+        height: var(--mini-icon-height);
+    }
+}
